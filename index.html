@@ -10,13 +10,17 @@
 		<button onclick="picture()">Click Me</button>
 	</h2>
 	<script type="text/javascript">
-		function picture(){
+		function picture()
+		{
 			var pic = "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg"
-			console.log(document.getElementById('pic').src);
-			if (document.getElementById('pic').src = "file:///C:/Users/fmi/Desktop/PU_1113/PU_1113/image/galaxy.jpg")
-				document.getElementById('pic').src = pic;
+			var idPic = document.getElementById('pic');
+
+			console.log(idPic.src);
+
+			if (idPic.src = "../image/galaxy.jpg")
+				idPic.src = pic;
 			else
-				document.getElementById('pic').src = "image/galaxy.jpg";
+				idPic.src = "image/galaxy.jpg";
 		}
 	</script>
 	
