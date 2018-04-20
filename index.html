@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+</head>
+<body style="text-align=center">
+	<h1>This is a picture</h1>
+	<img src="galaxy.jpg" />
+	<script type="text/javascript">
+		function picture(){
+		var pic = "https://media.wired.com/photos/598e35fb99d76447c4eb1f28/master/pass/phonepicutres-TA.jpg"
+		document.getElementById('pic').src = pic.replace('100x100', '250x250');
+		document.getElementById('pic').style.display='block';
+		}
+	</script>
+	<h2>
+		<img id="pic" src="pic" style="display:none" />
+		<button onclick="picture()">SHOW Picture</button>
+	</h2>
+	<footer> OK Team </footer>
+</body>
+</html>
